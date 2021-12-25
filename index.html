@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+    <body class="jumbotron">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                        <div id="form_domaine" class="domaine">
+                                <p class="lead">Veuillez-nous renseigner votre domaine convexe. <br>
+                                        NB: L'unité de mesure est le centimètre.
+                                </p>
+                                <form action="" onsubmit="return false;" class="form row">
+                                        <div class="col-md-12">
+                                                <div class="points">
+                                                        <div class="row input-group point" id="point_1">
+                                                                <h3>Point numero 1</h3>
+                                                                <div class="col-md-6">
+                                                                        <h5>Abscisse</h5>
+                                                                        <input type="text" class="input form-control" required>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                        <h5>Ordonnée</h5>
+                                                                        <input type="text" class="input form-control" required> 
+                                                                </div>
+                                                        </div>
+                                                        <br>
+                                                </div>
+                                                <div class="form-footer">
+                                                        <button type="submit" class="btn btn-primary" onclick="estCorrecteDomaine = createDomain(); if(!estCorrecteDomaine)alert('Votre domaine n\'est pas bien défini.');"> Créer le domaine </button>
+                                                        <button type="button" class="btn btn-success" onclick="addPoint();"> Ajouter un point </button>
+                                                        <button type="reset" class="btn btn-danger" onclick="cleanPoints();"> Recommencer </button>
+                                                        <button type="button" class="btn btn-info" onclick="if(estCorrecteDomaine)switchTo(document.getElementById('form_domaine'), document.getElementById('form_maillage'));else alert('Votre domaine n\'est pas bien défini. Il faut qu\'il soit aussi convexe pour lancer le maillage.');"> Mailler </button>
+                                                        <button type="button" class="btn btn-secondary" onclick="switchTo(document.getElementById('form_domaine'), document.getElementById('form_read'));">Charger un fichier</button>
+                                                </div>
+                                                        
+                                        </div>
+                                </form>
+                        </div>
+                        <div id="form_maillage" class="maillage" hidden>
+                                        <p class="lead">
+                                                Formulaire de maillage de votre domaine convexe.
+                                        </p>
+                                <form action="" onsubmit="return false;" class="form row">
+                                        <div class="col-md-12">
+                                                <h5>Pas du maillage</h5>
+                                                <input type="text" class="input form-control" required placeholder="Renseignez le pas" id="pas">  
+                                                <br>    
+                                            
+                                                <button type="submit" class="btn btn-primary" onclick="lancerMaillage(estCorrecteDomaine); show('zoom');"> Mailler </button>
+                                                <button type="button" class="btn btn-danger" onclick="switchTo(document.getElementById('form_maillage'), document.getElementById('form_domaine'));"> Changer de domaine </button>        
+                                                <button type="button" class="btn btn-success" onclick="if(estMaille){switchTo(document.getElementById('form_maillage'), document.getElementById('form_save'));}else{alert('Vous n\'avez pas encore de maillage');};">Persister</button>                                
+                                        </div>
+                                </form>
+                        </div>
+                        <div id="form_save" hidden>
+                                        <p class="lead">Formulaire de sauvegarde dans un fichier de maillage.
+                                        </p>
+                                <form action="" onsubmit="return false;" class="form row">
+                                        <div class="col-md-12">
+                                                <h5>Nom du fichier</h5>
+                                                <input type="text" class="input form-control" required placeholder="Renseignez le nom" id="file_name">  
+                                                <br>    
+                                            
+                                                
+                                                <button type="button" class="btn btn-danger" onclick="switchTo(document.getElementById('form_save'), document.getElementById('form_domaine'));"> Changer de domaine </button>        
+                                                <button type="button" class="btn btn-success" onclick="if(estMaille){persist(baseDesTrianglesFinis);}">Persister</button>                                
+                                        </div>
+                                </form>
+                        </div>
+                        <div id="form_read" hidden>
+                                <form action="" class="form row" onsubmit="return false;">
+                                        <div class="col-md-12">
+                                                <h5>Charger un fichier</h5>
+                                                <input type="file" name="load_file_input" id="load_file_input">
+                                                <br>    
+                                            
+                                                <button type="button" class="btn btn-primary" onclick="load();">Charger</button> 
+                                                <button type="button" class="btn btn-danger" onclick="switchTo(document.getElementById('form_read'), document.getElementById('form_domaine'));"> Changer de domaine </button>                                       
+                                        </div>
+                                </form>
+                        </div>
+                        
+                </div>
+                <div class="col-md-6">
+                        <div id="ecran_domaine" class="domaine">
+                                
+                        </div>
+                        <div id="zoom" hidden>
+                                <button type="button" class="btn btn-success" id="zoomplus">Zoom ++</button>
+                                <button type="button" class="btn btn-warning" id="zoommoins">Zoom --</button>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+        <script src="maillage.js"></script>
+        <script src="script.js"></script>
+        <script src="gestionFichier.js"></script>
+    </body>
+</html>
