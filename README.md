@@ -1,4 +1,4 @@
-# Meshing: Introduction   
+# Introduction to meshing   
 Here, we will present you a meshing program called "maillage" in French. Meshing means dividing a domain for example a rectangular one into a set of triangle pieces perfectly superposed.  
 ## Context  
 Many issues in real life lead scientists to adopt a **scientifical approach** to respond correctly to these issues. This scientifical approach requires to perform **mathematical operations**. **For instance**, if we want to determine the temperature of a specific point of warmed plate using given temperatures of some area, Scientist will use scientific tools to respond to that question. Among these scientific tools, we can name **operations on matrix, meshing of a domain, etc**.  
@@ -20,7 +20,7 @@ This meshing program has many features:
 - For a more friendly look to the meshing result printed, user can **zoom** the domain;  
 - Finally, he can **save** the meshing result in a file to be downloaded for future use;  
 # Technologies used in program  
-- ![**HTML**](https://developer.mozilla.org/fr/docs/Web/HTML) **HTML**  
+- ![**HTML**](https://fontawesome.com/icons/html5?f=brands&s=solid) **HTML**  
 - ![**CSS**](https://developer.mozilla.org/fr/docs/Web/CSS) **CSS**  
 - ![**Javascript**](https://developer.mozilla.org/fr/docs/Web/JavaScript) **Javascript**  
 - ![**PHP**](https://www.php.net/) **PHP**  
