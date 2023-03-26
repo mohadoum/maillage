@@ -1,5 +1,4 @@
-# Meshing
-# Introduction   
+# Meshing: Introduction   
 Here, we will present you a meshing program called "maillage" in French. Meshing means dividing a domain for example a rectangular one into a set of triangle pieces perfectly superposed.  
 ## Context  
 Many issues in real life lead scientists to adopt a **scientifical approach** to respond correctly to these issues. This scientifical approach requires to perform **mathematical operations**. **For instance**, if we want to determine the temperature of a specific point of warmed plate using given temperatures of some area, Scientist will use scientific tools to respond to that question. Among these scientific tools, we can name **operations on matrix, meshing of a domain, etc**.  
