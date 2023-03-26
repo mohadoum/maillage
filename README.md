@@ -21,9 +21,9 @@ This meshing program has many features:
 - Finally, he can **save** the meshing result in a file to be downloaded for future use;  
 # Technologies used in program  
 - ![**HTML**](https://skills.thijs.gg/icons?i=html) **HTML**  
-- ![**CSS**](https://developer.mozilla.org/fr/docs/Web/CSS) **CSS**  
-- ![**Javascript**](https://developer.mozilla.org/fr/docs/Web/JavaScript) **Javascript**  
-- ![**PHP**](https://www.php.net/) **PHP**  
+- ![**CSS**](https://skills.thijs.gg/icons?i=css) **CSS**  
+- ![**Javascript**](https://skills.thijs.gg/icons?i=js) **Javascript**  
+- ![**PHP**](https://skills.thijs.gg/icons?i=php) **PHP**  
 # Running the program  
 Here, we will perform step by step actions to:  
 - Create a **new convex domain**;  
