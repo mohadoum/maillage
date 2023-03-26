@@ -20,7 +20,7 @@ This meshing program has many features:
 - For a more friendly look to the meshing result printed, user can **zoom** the domain;  
 - Finally, he can **save** the meshing result in a file to be downloaded for future use;  
 # Technologies used in program  
-- ![**HTML**](https://drive.google.com/uc?id=1yMkG70x0RtEAgay1JjiExpQghZxC8Mns) **HTML**  
+- ![**HTML**](https://skills.thijs.gg/icons?i=html) **HTML**  
 - ![**CSS**](https://developer.mozilla.org/fr/docs/Web/CSS) **CSS**  
 - ![**Javascript**](https://developer.mozilla.org/fr/docs/Web/JavaScript) **Javascript**  
 - ![**PHP**](https://www.php.net/) **PHP**  
