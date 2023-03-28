@@ -30,7 +30,10 @@ Here, we will perform step by step actions to:
 - Proceed to the **meshing operation** of this domain:  
 - **Save** the meshed domain on **a file** for future use;  
 # App Demo
-![**Demo of the app**](https://drive.google.com/uc?id=1upWCZhuFR_X2BtF4lbp2i1Z7aKd5H_oV)  
+### 1. Creating a convex domain  
+![**Demo of the app**](https://drive.google.com/uc?id=1p4QR1rxL5WqmvgQebrcjihF6t14_bCWu)
+### 2. Meshing a convex domain  
+![**Demo of the app**](https://drive.google.com/uc?id=150y-CFlv4goJzhdsWdwChKTFIZqNq1_Z)  
 # Authors
 - **Mohammed THIANDOUM**, @mohadoum, Software Engineer  
 - Project Date: 2019  
