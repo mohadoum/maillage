@@ -35,6 +35,6 @@ Here, we will perform step by step actions to:
 ### 2. Meshing a convex domain  
 ![**Demo of the app**](https://drive.google.com/uc?id=150y-CFlv4goJzhdsWdwChKTFIZqNq1_Z)  
 # Authors
-- **Mohammed THIANDOUM**, @mohadoum, Software Engineer  
+- **Mohammed THIANDOUM**, @mohadoum, Software Engineer, thiandoummohammed@gmail.com
 - Project Date: 2019  
 ***Thanks for reading***
